@@ -10,5 +10,29 @@ package zweitehue;
  * @author elias
  */
 public class NumberTester {
+
+    public NumberTester(String fileName) {
     
+    
+    }
+     public void setOddEven(NumberTest oddTester)
+     {
+     
+     }
+     public void setPrimeTester(NumberTest primeTester)
+     {
+     
+     }
+     
+     public void setPalindromeTester(NumberTest palindromeTester)
+     {
+     
+     }
+     
+     public void testFle()
+     {}
+     
+     public interface NumberTest{
+     boolean testNumber(int number);
+     }
 }
