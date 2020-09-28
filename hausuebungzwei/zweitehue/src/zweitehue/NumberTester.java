@@ -23,12 +23,12 @@ public class NumberTester {
      }
      public void setPrimeTester(NumberTest primeTester)
      {
-     
+         primeTester = (int i) -> (i%2 != 0 && i != 2)
      }
      
      public void setPalindromeTester(NumberTest palindromeTester)
      {
-     
+         palindromeTester = (i) -> 
      }
      
      public void testFle()
