@@ -9,6 +9,12 @@ package zweitehue;
  *
  * @author elias
  */
-public interface NumberTest {
-    boolean testNumber(int number);
+public interface PrimeSieve {
+  
+public boolean isPrime(int p);
+public void printPrimes();
+
+
 }
+
+

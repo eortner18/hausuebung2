@@ -15,10 +15,8 @@ public class Zweitehuemain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String s = "hallo";
-        HalloJavamitForEach h = new HalloJavamitForEach();
-        h.fEhinzufuegen(s);
-        h.forEachAusgabe();
+       NumberTester numbertester = new NumberTester("");
+       
     }
     
 }
