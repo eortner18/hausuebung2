@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author elias
  */
-public class Erasthotiles {
-    public class EratosthenesPrimeSieve implements PrimeSieve {
+
+public class Erasthotiles implements PrimeSieve {
 
     private int obergrenzePrimzahlen;
 
-    public EratosthenesPrimeSieve(int pobergrenzePrimzahlen) {
+    public Erasthotiles(int pobergrenzePrimzahlen) {
         this.obergrenzePrimzahlen = pobergrenzePrimzahlen;
     }
 

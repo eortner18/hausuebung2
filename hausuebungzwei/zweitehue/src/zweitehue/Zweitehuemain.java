@@ -16,7 +16,9 @@ public class Zweitehuemain {
      */
     public static void main(String[] args) {
        NumberTester numbertester = new NumberTester("");
-       
+       Erasthotiles e = new Erasthotiles(5);
+       numbertester.setOddEven((i) -> (i%2) == 0);
+       numbertester.setPrimeTester((i) -> e.isPrime(i));
     }
     
 }
