@@ -5,7 +5,13 @@
  */
 package zweitehue;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.IntStream;
+import static zweitehue.Zweitehuemain.main;
 
 /**
  *
@@ -17,6 +23,14 @@ public class Zweitehuemain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String filename = "f";
+           try {
+            BufferedWriter br=new BufferedWriter(new FileWriter(filename));
+        } catch (IOException ex) {
+            Logger.getLogger(Zweitehuemain.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
        NumberTester numbertester = new NumberTester("");
        Erasthotiles e = new Erasthotiles(5);
        numbertester.setOddEven((i) -> (i%2) == 0);

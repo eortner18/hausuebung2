@@ -5,6 +5,11 @@
  */
 package zweitehue;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author elias
@@ -40,7 +45,54 @@ public class NumberTester {
     {
      this.palindromeTester = palindromeTester;
         }
-     public void testFle()
-     {}
-     
+    
+    public void testFile() throws FileNotFoundException, IOException {
+        BufferedReader br=new BufferedReader(new FileReader(this.fileName));
+        String line=br.readLine();
+        line=br.readLine();
+        while(line!=null)
+        {
+            
+            final String[] input = line.split(" ");
+            int i1=Integer.parseInt(input[0]);
+            int i2=Integer.parseInt(input[1]);
+            if(i1==1)
+            {
+                if(oddTester.testNumber(i2)==true){
+                    System.out.println("EVEN");
+                }
+                else
+                {
+                    System.out.println("ODD");
+                }
+            }
+            else if(i1==2)
+            {
+                if(primeTester.testNumber(i2)==true)
+                {
+                    System.out.println("PRIME");
+                }
+                else
+                {
+                    System.out.println("NO PRIME");
+                }
+            }
+            else if(i1==3)
+            {
+                if(palindromeTester.testNumber(i2)==true)
+                {
+                    System.out.println("PALINDROME");
+                }
+                else
+                {
+                    System.out.println("NO PALINDROME");
+                }
+            }
+            else
+            {
+                System.out.println("Error");
+            }
+            line=br.readLine();
+        }
+    }
 }
