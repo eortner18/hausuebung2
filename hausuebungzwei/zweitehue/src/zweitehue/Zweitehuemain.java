@@ -5,6 +5,8 @@
  */
 package zweitehue;
 
+import java.util.stream.IntStream;
+
 /**
  *
  * @author elias
@@ -19,6 +21,13 @@ public class Zweitehuemain {
        Erasthotiles e = new Erasthotiles(5);
        numbertester.setOddEven((i) -> (i%2) == 0);
        numbertester.setPrimeTester((i) -> e.isPrime(i));
+       numbertester.setPalindromeTester((number) -> {
+           
+           return number == IntStream.iterate(number, i -> i / 10)
+                   .map(n -> n % 10)
+                   .limit(String.valueOf(number).length())
+                   .reduce(0, (a, b) -> a = a * 10 + b); 
+       });
     }
     
 }
