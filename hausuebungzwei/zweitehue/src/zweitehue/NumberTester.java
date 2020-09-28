@@ -17,7 +17,9 @@ public class NumberTester {
     }
      public void setOddEven(NumberTest oddTester)
      {
-      NumberTest isOdd = (k) -> (k%2) == 0;
+      oddTester = (k) -> (k%2) == 0;
+      
+      
      }
      public void setPrimeTester(NumberTest primeTester)
      {
