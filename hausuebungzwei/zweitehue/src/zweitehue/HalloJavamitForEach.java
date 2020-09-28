@@ -29,8 +29,8 @@ public class HalloJavamitForEach {
         for (String sarhah: liste) {
             System.out.println(sarhah);
         }
-        
-    }
+        liste.forEach ((String sarhaha) -> System.out.println(sarhaha));
+   }
     public void fEhinzufuegen(String s)
     {
     liste.add(s);
