@@ -15,8 +15,20 @@ public class Erasthotiles implements PrimeSieve {
 
     private int obergrenzePrimzahlen;
 
+    public Erasthotiles() {
+    }
+
     public Erasthotiles(int pobergrenzePrimzahlen) {
         this.obergrenzePrimzahlen = pobergrenzePrimzahlen;
+    }
+    @Override
+    public void printPrimes() {
+        System.out.println("Primzahlen sind:");
+        for (int i = 0; i <= this.obergrenzePrimzahlen; i++) {
+            if (isPrime(i) == true && i > 1) {
+                System.out.print(i + ",");
+            }
+        }
     }
 
     @Override
@@ -45,14 +57,6 @@ public class Erasthotiles implements PrimeSieve {
         return zahlen.get(p--);
     }
 
-    @Override
-    public void printPrimes() {
-        System.out.println("Primzahlen sind:");
-        for (int i = 0; i <= this.obergrenzePrimzahlen; i++) {
-            if (isPrime(i) == true && i > 1) {
-                System.out.print(i + ", ");
-            }
-        }
-    }
+    
 
 }
