@@ -9,7 +9,8 @@ package zweitehue;
  *
  * @author elias
  */
-public class NumberGenerator {
+public class Number {
+
     private double a;
     private double b;
 
@@ -28,6 +29,5 @@ public class NumberGenerator {
     public void setB(double b) {
         this.b = b;
     }
-    
-    
+
 }

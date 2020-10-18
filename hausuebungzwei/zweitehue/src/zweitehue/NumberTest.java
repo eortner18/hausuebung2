@@ -10,5 +10,6 @@ package zweitehue;
  * @author elias
  */
 public interface NumberTest {
+
     boolean testNumber(int number);
 }

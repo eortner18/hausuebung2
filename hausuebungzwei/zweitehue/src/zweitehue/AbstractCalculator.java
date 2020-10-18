@@ -10,6 +10,7 @@ package zweitehue;
  * @author elias
  */
 public abstract class AbstractCalculator {
+
     protected CalculationOperation add;
     protected CalculationOperation subtract;
     protected CalculationOperation multiply;
@@ -21,9 +22,12 @@ public abstract class AbstractCalculator {
         this.multiply = multiply;
         this.divide = divide;
     }
-    
-    public Number add()
-    {
-    
-    }
+
+    public abstract Number add(Number a, Number b);
+
+    public abstract Number subtract(Number a, Number b);
+
+    public abstract Number multiply(Number a, Number b);
+
+    public abstract Number divide(Number a, Number b);
 }

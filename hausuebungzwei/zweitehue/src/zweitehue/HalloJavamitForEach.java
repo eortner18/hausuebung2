@@ -7,33 +7,29 @@ package zweitehue;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
-import javafx.scene.input.KeyCode;
-import static javafx.scene.input.KeyCode.T;
+
 
 /**
  *
  * @author elias
  */
 public class HalloJavamitForEach {
-    
+
     List<String> liste = new ArrayList<>();
-    
-    
-    public void forEachAusgabe()
-    {
+
+    public void forEachAusgabe() {
         liste.add("hallo");
-        liste.add("fEhinzufügen is kagge");
-        liste.add("Onii-chan");
-        
-        for (String sarhah: liste) {
+        liste.add("hallo2");
+        liste.add("hallo3");
+
+        for (String sarhah : liste) {
             System.out.println(sarhah);
         }
-        liste.forEach ((String sarhaha) -> System.out.println(sarhaha));
-   }
-    public void fEhinzufuegen(String s)
-    {
-    liste.add(s);
+        liste.forEach((String forEachString) -> System.out.println(forEachString));
     }
-    
+
+    public void fEhinzufuegen(String s) {
+        liste.add(s);
+    }
+
 }
